@@ -1,0 +1,129 @@
+.portada {
+    p {
+        font-size: 55px;
+        font-weight: 500;
+        color: #9C030E;
+    }
+
+    .btn1 {
+        width: 90%;
+        background-color: #9C030E;
+        color: #E0D0EC;
+        padding: 0.9rem;
+        border: none;
+    }
+
+    .btn2 {
+        width: 90%;
+        background-color: #e0d0ec;
+        color: #526b2d;
+        padding: 0.9rem;
+        border: none;
+    }
+
+    .btn3 {
+        width: 90%;
+        background-color: #526b2d;
+        color: #E0D0EC;
+        padding: 0.9rem;
+        border: none;
+    }
+}
+
+.separador {
+    rotate: 180deg;
+    fill: #E0D0EC;
+}
+
+.problema {
+    height: 100vh;
+    background-color: #E0D0EC;
+}
+
+.separador2 {
+    fill: #E0D0EC;
+}
+
+.propuesta {
+    height: 150vh;
+    background-color: #8c030e;
+    color: #E0D0EC;
+}
+
+.separador3 {
+    rotate: 180deg;
+    fill: #526b2d;
+}
+
+.funciones {
+    height: 100vh;
+    background-color: #526b2d;
+}
+
+.separador4 {
+    fill: #526b2d;
+}
+
+.demo {
+    height: 150vh;
+    background-color: #ffffff;
+}
+
+.separador5 {
+    rotate: 180deg;
+    fill: #E0D0EC;
+}
+
+.beneficios {
+    height: 100vh;
+    background-color: #E0D0EC;
+}
+
+.separador6 {
+    fill: #E0D0EC;
+}
+
+.comunidad {
+    height: 150vh;
+    background-color: #526b2d;
+    color: #E0D0EC;
+}
+
+.separador7 {
+    rotate: 180deg;
+    fill: #ffffff;
+}
+
+.personajes {
+    height: 100vh;
+    background-color: #ffffff;
+}
+
+.separador8 {
+    fill: #ffffff;
+}
+
+.actyrec {
+    height: 150vh;
+    background-color: #8C030E;
+    color: #E0D0EC;
+}
+
+.separador9 {
+    rotate: 180deg;
+    fill: #E0D0EC;
+}
+
+.registro {
+    height: 100vh;
+    background-color: #E0D0EC;
+}
+
+.separador10 {
+    fill: #E0D0EC;
+}
+
+.footer {
+    height: 80vh;
+    background-color: #ffffff;
+}
