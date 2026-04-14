@@ -2,7 +2,7 @@
 /* Crimson Roman */
 @font-face {
     font-family: 'Crimson';
-    src: url('./assets/fonts/crimson/Crimson-Roman.ttf') format('truetype');
+    src: url('/fonts/crimson/Crimson-Roman.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -10,7 +10,7 @@
 /* Crimson Italic */
 @font-face {
     font-family: 'Crimson';
-    src: url('./assets/fonts/crimson/Crimson-Italic.ttf') format('truetype');
+    src: url('/fonts/crimson/Crimson-Italic.ttf') format('truetype');
     font-weight: 400;
     font-style: italic;
 }
@@ -18,7 +18,7 @@
 /* Crimson Bold */
 @font-face {
     font-family: 'Crimson';
-    src: url('./assets/fonts/crimson/Crimson-Bold.ttf') format('truetype');
+    src: url('/fonts/crimson/Crimson-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
@@ -26,7 +26,7 @@
 /* Crimson Bold Italic */
 @font-face {
     font-family: 'Crimson';
-    src: url('./assets/fonts/crimson/Crimson-BoldItalic.ttf') format('truetype');
+    src: url('/fonts/crimson/Crimson-BoldItalic.ttf') format('truetype');
     font-weight: 700;
     font-style: italic;
 }
@@ -34,7 +34,7 @@
 /* Crimson Semibold */
 @font-face {
     font-family: 'Crimson';
-    src: url('./assets/fonts/crimson/Crimson-Semibold.ttf') format('truetype');
+    src: url('/fonts/crimson/Crimson-Semibold.ttf') format('truetype');
     font-weight: 600;
     font-style: normal;
 }
@@ -42,7 +42,7 @@
 /* Crimson Semibold Italic */
 @font-face {
     font-family: 'Crimson';
-    src: url('./assets/fonts/crimson/Crimson-SemiboldItalic.ttf') format('truetype');
+    src: url('/fonts/crimson/Crimson-SemiboldItalic.ttf') format('truetype');
     font-weight: 600;
     font-style: italic;
 }
@@ -52,7 +52,7 @@
 /* Lato Thin */
 @font-face {
     font-family: 'Lato';
-    src: url('./assets/fonts/Lato/Lato-Thin.ttf') format('truetype');
+    src: url('/fonts/Lato/Lato-Thin.ttf') format('truetype');
     font-weight: 100;
     font-style: normal;
 }
@@ -60,7 +60,7 @@
 /* Lato Thin Italic */
 @font-face {
     font-family: 'Lato';
-    src: url('./assets/fonts/Lato/Lato-ThinItalic.ttf') format('truetype');
+    src: url('/fonts/Lato/Lato-ThinItalic.ttf') format('truetype');
     font-weight: 100;
     font-style: italic;
 }
@@ -68,7 +68,7 @@
 /* Lato Light */
 @font-face {
     font-family: 'Lato';
-    src: url('./assets/fonts/Lato/Lato-Light.ttf') format('truetype');
+    src: url('/fonts/Lato/Lato-Light.ttf') format('truetype');
     font-weight: 300;
     font-style: normal;
 }
@@ -76,7 +76,7 @@
 /* Lato Light Italic */
 @font-face {
     font-family: 'Lato';
-    src: url('./assets/fonts/Lato/Lato-LightItalic.ttf') format('truetype');
+    src: url('/fonts/Lato/Lato-LightItalic.ttf') format('truetype');
     font-weight: 300;
     font-style: italic;
 }
@@ -84,7 +84,7 @@
 /* Lato Regular */
 @font-face {
     font-family: 'Lato';
-    src: url('./assets/fonts/Lato/Lato-Regular.ttf') format('truetype');
+    src: url('/fonts/Lato/Lato-Regular.ttf') format('truetype');
     font-weight: 400;
     font-style: normal;
 }
@@ -92,7 +92,7 @@
 /* Lato Italic */
 @font-face {
     font-family: 'Lato';
-    src: url('./assets/fonts/Lato/Lato-Italic.ttf') format('truetype');
+    src: url('/fonts/Lato/Lato-Italic.ttf') format('truetype');
     font-weight: 400;
     font-style: italic;
 }
@@ -100,7 +100,7 @@
 /* Lato Bold */
 @font-face {
     font-family: 'Lato';
-    src: url('./assets/fonts/Lato/Lato-Bold.ttf') format('truetype');
+    src: url('/fonts/Lato/Lato-Bold.ttf') format('truetype');
     font-weight: 700;
     font-style: normal;
 }
@@ -108,7 +108,7 @@
 /* Lato Bold Italic */
 @font-face {
     font-family: 'Lato';
-    src: url('./assets/fonts/Lato/Lato-BoldItalic.ttf') format('truetype');
+    src: url('/fonts/Lato/Lato-BoldItalic.ttf') format('truetype');
     font-weight: 700;
     font-style: italic;
 }
@@ -116,7 +116,7 @@
 /* Lato Black */
 @font-face {
     font-family: 'Lato';
-    src: url('./assets/fonts/Lato/Lato-Black.ttf') format('truetype');
+    src: url('/fonts/Lato/Lato-Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
 }
@@ -124,7 +124,7 @@
 /* Lato Black Italic */
 @font-face {
     font-family: 'Lato';
-    src: url('./assets/fonts/Lato/Lato-BlackItalic.ttf') format('truetype');
+    src: url('/fonts/Lato/Lato-BlackItalic.ttf') format('truetype');
     font-weight: 900;
     font-style: italic;
 }
