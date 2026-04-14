@@ -7,7 +7,7 @@ export const CardPersonajes = ({ nombre, img, descripcion }) => {
                 <h3>{nombre}</h3>
                 <div className="cardPersonaje rounded-4 d-flex flex-column justify-content-between align-items-center">
                     <div>
-                        <img src={img} alt="" />
+                        <img className="img-fluid" src={img} alt="" />
                     </div>
                     <div className="p-5">
                         <p>{descripcion}</p>

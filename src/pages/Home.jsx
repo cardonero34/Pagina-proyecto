@@ -3,14 +3,39 @@ import { CardRecursos } from "../components/CardRecursos"
 import { Comentarios } from "../components/Comentarios"
 import { Encabezados } from "../components/Encabezados"
 import { Footer } from "../components/Footer"
+import { useRef } from "react"
 import { Nav } from "../components/Nav"
 import "../stylesheets/Home.css"
 
 export const Home = () => {
+
+    const problemaRef = useRef(null);
+    const acercadeRef = useRef(null);
+    const animacionRef = useRef(null);
+    const beneficiosRef = useRef(null);
+    const comunidadRef = useRef(null);
+
+    const scrollToProblema = () => {
+        problemaRef.current?.scrollIntoView({ behavior: "smooth" });
+    };
+    const scrollToAcercade = () => acercadeRef.current.scrollIntoView({ behavior: "smooth" });
+    const scrollToAnimacion = () => animacionRef.current.scrollIntoView({ behavior: "smooth" });
+    const scrollToBeneficios = () => beneficiosRef.current.scrollIntoView({ behavior: "smooth" });
+    const scrollToComunidad = () => comunidadRef.current.scrollIntoView({ behavior: "smooth" });
+
+
+
+
     return (
         <>
             <div className="position-fixed w-100 z-1">
-                <Nav />
+                <Nav
+                    onProblemaClick={scrollToProblema}
+                    onAcercadeClick={scrollToAcercade}
+                    onAnimacionClick={scrollToAnimacion}
+                    onBeneficiosClick={scrollToBeneficios}
+                    onComunidadClick={scrollToComunidad}
+                />
             </div>
 
             <section className="portada position-relative d-flex justify-content-center align-items-center">
@@ -23,10 +48,10 @@ export const Home = () => {
 
                     <div className="row w-75 d-flex d-flex justify-content-center align-items-center g-5 mt-lg-4 mt-md-0">
                         <div className="col-lg-6 col-md-8">
-                            <button type="button" className="btn2 rounded-3 shadow">Explora la animación</button>
+                            <button type="button" className="btn2 rounded-3 shadow" onClick={scrollToAnimacion}>Explora la animación</button>
                         </div>
                         <div className="col-lg-6 col-md-8">
-                            <button type="button" className="btn3 rounded-3 shadow">Conoce más</button>
+                            <button type="button" className="btn3 rounded-3 shadow" onClick={scrollToAcercade}>Conoce más</button>
                         </div>
                     </div>
                 </div>
@@ -39,7 +64,7 @@ export const Home = () => {
 
             </section>
 
-            <section className="problema d-flex justify-content-center align-items-center">
+            <section id="problema" ref={problemaRef} className="problema d-flex justify-content-center align-items-center">
                 <div className="w-75 d-flex flex-column justify-content-center align-items-center gap-5">
                     <div className="d-flex justify-content-center align-items-center">
                         <Encabezados titulo={"El problema que resolvemos"} descripcion={"En un mundo que nos empuja a la lectura superficial, muchos encuentran barreras emocionales, simbolicas y culturales que dificultan una conexión profunda con los libros. Leerse nace para ransformar esa experiencia"} />
@@ -94,7 +119,7 @@ export const Home = () => {
                 </div>
             </section>
 
-            <section className="propuesta position-relative d-flex justify-content-center align-items-center overflow-hidden">
+            <section id="acercade" ref={acercadeRef} className="propuesta position-relative d-flex justify-content-center align-items-center overflow-hidden">
                 <div className="w-100 position-absolute top-0 start-50 translate-middle-x">
                     <svg className="separador2 w-100" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 100.94">
                         <path d="M700,0v100.94L298.06,36.68c-90.63-14.49-183.52,1.57-264.04,45.63L0,100.94V0h700Z" />
@@ -165,7 +190,7 @@ export const Home = () => {
                 </div>
             </section>
 
-            <section className="demo position-relative d-flex justify-content-center align-items-center">
+            <section id="animacion" ref={animacionRef} className="demo position-relative d-flex justify-content-center align-items-center">
                 <div className="w-100 position-absolute top-0 start-50 translate-middle-x">
                     <svg className="separador4 w-100" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 100.94">
                         <path d="M700,0v100.94L298.06,36.68c-90.63-14.49-183.52,1.57-264.04,45.63L0,100.94V0h700Z" />
@@ -185,7 +210,7 @@ export const Home = () => {
                         <p className="w-75 m-0">Regístrate o inicia sesión para desbloquear la historia completa y explorar cada rincón del universo Leersé.</p>
                         <div className=" row w-75 d-flex justify-content-center align-items-center gy-4">
                             <div className="col-lg-5 col-md-8">
-                                <button type="button" className="btn2 rounded-3">Inicia sesión</button>
+                                <button type="button" className="btn2 rounded-3" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Inicia sesión</button>
                             </div>
                             <div className="col-lg-5 col-md-8">
                                 <button type="button" className="btn3 rounded-3">Registrarse</button>
@@ -200,7 +225,7 @@ export const Home = () => {
                 </div>
             </section>
 
-            <section className="beneficios d-flex justify-content-center align-items-center position-relative overflow-hidden">
+            <section id="beneficios" ref={beneficiosRef} className="beneficios d-flex justify-content-center align-items-center position-relative overflow-hidden">
                 <img className="decor3 opacity-50" src="/formas-decorativas-02.png" alt="" />
                 <div className="w-75 d-flex flex-column justify-content-center align-items-center gap-4 pb-5">
                     <div className="d-flex justify-content-center align-items-center">
@@ -236,7 +261,7 @@ export const Home = () => {
                 <img className="decor4 opacity-50" src="/formas-decorativas-02.png" alt="" />
             </section>
 
-            <section className="comunidad position-relative d-flex justify-content-center align-items-center">
+            <section id="comunidad" ref={comunidadRef} className="comunidad position-relative d-flex justify-content-center align-items-center">
                 <div className="w-100 position-absolute top-0 start-50 translate-middle-x">
                     <svg className="separador6 w-100" id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 100.94">
                         <path d="M700,0v100.94L298.06,36.68c-90.63-14.49-183.52,1.57-264.04,45.63L0,100.94V0h700Z" />
@@ -282,13 +307,16 @@ export const Home = () => {
                     </div>
                     <div className="w-100 row align-items-start text-center">
                         <div className="col-lg-4 p-4">
-                            <CardPersonajes nombre={"Camila"} descripcion={"Protagonista de la historia, una mujer trans de unos 20 años que busca un lugar donde pertenecer en la ciudad de Córdoba."} img={"/personaje1.png"} />
+                            <CardPersonajes nombre={"Camila"}
+                                img={"/pers1.png"} descripcion={"Soy Camila, travesti, escritora y sobreviviente. En mi piel llevo la memoria de una infancia marcada por la soledad y la vergüenza, pero también por la rebeldía de no dejarme borrar. Escribo para que nuestra voz arda y no se apague nunca. Si me lees, ya no estoy sola."} />
                         </div>
                         <div className="col-lg-4 p-4">
-                            <CardPersonajes nombre={"Camila"} descripcion={"Protagonista de la historia, una mujer trans de unos 20 años que busca un lugar donde pertenecer en la ciudad de Córdoba."} img={"/personaje1.png"} />
+                            <CardPersonajes nombre={"Amiga"}
+                                img={"/pers2.png"} descripcion={"Soy Claudia, travesti como mis hermanas, aunque a veces me siento más invisible que ellas. He aprendido a reír fuerte para que no se note el miedo, y a maquillarme como armadura contra el desprecio del mundo. Sueño con un futuro distinto, pero mientras llega, bailo, amo y sigo viva."} />
                         </div>
                         <div className="col-lg-4 p-4">
-                            <CardPersonajes nombre={"Camila"} descripcion={"Protagonista de la historia, una mujer trans de unos 20 años que busca un lugar donde pertenecer en la ciudad de Córdoba."} img={"/personaje1.png"} />
+                            <CardPersonajes nombre={"Tía Encarna"}
+                                img={"/pers3.png"} descripcion={"Dicen que soy vieja, pero yo me digo sabia. Soy la madre travesti de todas, la que acoge, la que alimenta, la que enseña que el dolor también se puede compartir. Abrí mi casa para que nadie durmiera en la calle, y aunque mis huesos crujan, sigo de pie, sosteniéndonos."} />
                         </div>
                     </div>
                 </div>
@@ -330,15 +358,15 @@ export const Home = () => {
                     <div className="w-100 d-flex flex-column gap-4">
                         <div className="form-floating campoF">
                             <input type="text" className="form-control" id="floatingPassword" placeholder="Tu nombre" />
-                            <label className="leb" for="floatingPassword">Tu nombre</label>
+                            <label className="leb" htmlFor="floatingPassword">Tu nombre</label>
                         </div>
                         <div className="form-floating campoF">
                             <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com" />
-                            <label className="leb" for="floatingInput">Tu correo electrónico</label>
+                            <label className="leb" htmlFor="floatingInput">Tu correo electrónico</label>
                         </div>
                         <div className="form-floating campoF">
-                            <select className="form-select rounded-3">
-                                <option selected>Selecciona tu rol</option>
+                            <select defaultValue="select" className="form-select rounded-3">
+                                <option value="select">Selecciona tu rol</option>
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
