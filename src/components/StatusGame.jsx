@@ -1,7 +1,10 @@
-import React from 'react'
+
 
 export const StatusGame = () => {
-  return (
-    <div>StatusGame</div>
+    const [vidas, setVidas] = useState({}) 
+
+    return (<div>
+       statusGame
+    </div>
   )
 }
