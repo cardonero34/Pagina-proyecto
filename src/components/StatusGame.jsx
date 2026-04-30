@@ -5,6 +5,10 @@ export const StatusGame = () => {
   const [vidas, setVidas] = useState({})
 
   return (
-  <div> statusGame </div>
+  <div className="vidas">
+    <button>Vida 1</button>
+    <button>Vida 2</button>
+    <button>Vida 3</button>
+  </div>
   )
 }
